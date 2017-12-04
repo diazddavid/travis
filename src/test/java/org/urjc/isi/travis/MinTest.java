@@ -47,16 +47,16 @@ public class MinTest
 //      Min.min (list);
 //   }
 
-//   @Test (expected = ClassCastException.class)
-//   @SuppressWarnings ("unchecked")
-//   public void testMutuallyIncomparable()
-//   {
-//      List list = new ArrayList();
-//      list.add ("cat");
-//      list.add ("dog");
-//      list.add (1);
-//      Min.min (list);
-//   }
+   @Test (expected = ClassCastException.class)
+   @SuppressWarnings ("unchecked")
+   public void testMutuallyIncomparable()
+   {
+      List list = new ArrayList();
+      list.add ("cat");
+      list.add ("dog");
+      list.add (1);
+      Min.min (list);
+   }
 
    @Test (expected = IllegalArgumentException.class)
    public void testEmptyList()
